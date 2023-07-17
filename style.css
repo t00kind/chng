@@ -79,6 +79,7 @@ body {
     font-family: "Jebra";
     background-color: hsl(220deg 33.33% 1.76%);
     color: white;
+    overflow-x: hidden;
 }
 
 .resize {
