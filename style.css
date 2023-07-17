@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "Jebra"; src: url("g-font.woff2") format("woff2")
+}
+
+@keyframes turn-up {
+    from {color: hsl(220deg 33.33% 1.76%);}
+    to {color: white;}
+  }
+
+@keyframes getin {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@media (max-width: 576px) {
+    .focus {
+        margin-top: 70%;
+        margin-bottom: 70%;
+    }
+}
+
+#what {
+    text-decoration: none;
+    transition: all 1s ease;
+
+}
+.x-lar
+{
+    font-size: 3em;
+    margin-top: 30%;
+}
+#r4
+{
+    text-decoration: underline;
+}
+.pal {
+    display: inline;
+    background: red;
+
+}
+
+.topg {
+    position: fixed;
+    z-index: 99;
+    background-color: hsl(220deg 33.33% 1.76%);
+    height: revert;
+}
+
+
+#pain {
+    transition: opacity 0.5s ease-in-out;
+    margin-top: 20%;
+}
+
+.base {
+    display: inline;
+}
+
+
+#dm {
+    font-size: xx-large;
+    margin-top: 30%;
+
+
+}
+#chng {
+    background-color: white;
+    color: red;
+    animation-name: getin;
+    animation-duration: 3s;
+    box-shadow: 0px 0px 3px white;
+    margin-top: 10px;
+}
+.fantom {
+    animation-name: turn-up;
+    animation-duration: 7s;
+}
+body {
+    font-family: "Jebra";
+    background-color: hsl(220deg 33.33% 1.76%);
+    color: white;
+}
+
+.resize {
+    width: 450px;
+    height: auto;
+}
+
+.resize {
+    width: 350px;
+    height: auto;
+}
+
+#logo {
+    text-align: center;
+    font-size: 2.3em;
+    height: 25%;
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.075);
+    transition: background-color 0.5s ease-in-out;
+}
+
+.blurred {
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+  }
