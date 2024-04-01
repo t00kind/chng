@@ -1,8 +1,13 @@
 #logo {
   background-color: red;
   position: fixed;
-  z-index: 333;
+  z-index: 999;
   mix-blend-mode: difference;
+}
+
+.baseline {
+  white-space: nowrap;
+  z-index: 10;
 }
 
 

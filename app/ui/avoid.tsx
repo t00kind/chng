@@ -1,5 +1,5 @@
 export const Avoid = () =>{
     return (
-        <p>doing fukking chnging</p>
+        <p className="baseline">doing fukking chnging</p>
     )
 }
