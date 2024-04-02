@@ -1,13 +1,21 @@
 #logo {
-  background-color: red;
   position: fixed;
-  z-index: 999;
-  mix-blend-mode: difference;
+  z-index: 99999999;
+  text-align: center;
+  backdrop-filter: blur(12px);
+  white-space: nowrap;
+}
+.now {
+  font-size: xxx-large;
+}
+
+.bruh {
+  background-color: rgba(255, 0, 0, 0.507);
+  backdrop-filter: blur(3px);
 }
 
 .baseline {
   white-space: nowrap;
-  z-index: 10;
 }
 
 

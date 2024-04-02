@@ -5,6 +5,5 @@ export const animate = () => {
 
     if (chng) {
         const tl = gsap.timeline()
-        tl.set(chng, {yPercent: 50})
     }
 }
