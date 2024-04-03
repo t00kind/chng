@@ -1,9 +1,18 @@
 #logo {
   position: fixed;
-  z-index: 99999999;
+  z-index: 9;
   text-align: center;
   backdrop-filter: blur(12px);
   white-space: nowrap;
+  -webkit-backdrop-filter: blur(12px);
+}
+::-webkit-scrollbar {
+  display: none;
+}
+#say {
+  margin-top: 70%;
+  text-align: center;
+  width: 100%;
 }
 .now {
   font-size: xxx-large;
@@ -12,6 +21,7 @@
 .bruh {
   background-color: rgba(255, 0, 0, 0.507);
   backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
 }
 
 .baseline {
