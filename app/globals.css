@@ -12,10 +12,24 @@
 #say {
   margin-top: 70%;
   text-align: center;
-  width: 100%;
+  
+}
+.hig {
+  height: 100vh;
 }
 .now {
   font-size: xxx-large;
+}
+#part1 {
+  opacity: 1;
+  font-size: xxx-large;
+}
+.flip {
+  -moz-transform: scale(-1, 1);
+-webkit-transform: scale(-1, 1);
+-o-transform: scale(-1, 1);
+-ms-transform: scale(-1, 1);
+transform: scale(-1, 1);
 }
 
 .bruh {

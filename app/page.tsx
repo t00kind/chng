@@ -14,9 +14,7 @@ export default function Home() {
   gsap.registerPlugin(useGSAP);
   gsap.registerPlugin(ScrollTrigger)
   ScrollTrigger.config({ ignoreMobileResize: true });
-  const logoRef = useRef(null);
-  const whatRef = useRef(null);
-  const arr = []
+  const arr = [];
   for (let i =0; i<30; i++) {
     arr.push(i);
   }
@@ -24,16 +22,22 @@ export default function Home() {
   const [next, setN] = useState('');
   const [chng, setC] = useState('change');
   const [m, setM] = useState('');
+  const [f, setF] = useState(false);
+  const [wh, setW] = useState("И ЕСЛИ УЖ МЕНЯТЬ");
   useGSAP(() => {
-
-    gsap.to("#mr_penis", {
+    let am = ScrollTrigger.maxScroll(window)*1/2
+    const tl = gsap.timeline();
+    tl.to("#mr_penis", {
       scrollTrigger: {
         trigger: '#say',
         start: "top center",
-        end: "top top",
-        pin: true,
+        end: "+=" + am,
+        pin: "#say",
+        toggleActions:"restart complete reverse reset",
         scrub: true,
-        onEnter: () => {setM("КТО, ЕСЛИ НЕ ТЫ"),setH("your"), setN("life")},
+        onEnter: () => {setM("КТО, ЕСЛИ НЕ ТЫ"),setH("your"), setN("life"), setC("change")},
+        onEnterBack: () => {setC("change")},
+        onLeave: () => {setN(""), setH(""), setC("changing"), setM("")},
         onUpdate: ({progress}) => {
           if (progress > 0.5 && progress < 0.8) {
           setM("ЛОМАЙ РАМКИ"); 
@@ -42,24 +46,43 @@ export default function Home() {
             setM("МЕНЯЙ МИР");
             setH("the");
             setN("world")
+          } else if (progress < 0.3) {
+            setM("КТО, ЕСЛИ НЕ ТЫ"),setH("your"), setN("life")
           }
         },
-        onLeaveBack: () => {setH(""), setN("")},
+        onLeaveBack: () => {setH(""), setN(""), setM(""), setC("  change")},
         pinSpacing: false,
-       // markers: {startColor: "white", endColor: "white", fontSize: "18px", fontWeight: "bold", indent: 20}
+      //  markers: {startColor: "white", endColor: "white", fontSize: "18px", fontWeight: "bold", indent: 20},
       },
       ease: "power1.inOut",
-    });
-  
-  });
+    }).to("#part1", {scrollTrigger: {
+      trigger: "#part1",
+      start: "top center",
+      end: "center center",
+      pin: true,
+      scrub: true,
+      onUpdate: ({progress}) => {
+        if (progress > .7) {
+          setW("ТО ТОЛЬКО СЕЙЧАС")
+        } else {
+          setW("И ЕСЛИ УЖ МЕНЯТЬ")
+        }
+      },
+      markers: {startColor: "white", endColor: "white", fontSize: "18px", fontWeight: "bold", indent: 20}
 
+  },
+      opacity: 1});
+  });
   return (
     <main className={styles.main}>
         <Logo c={chng} h={hot} n={next} />
-        <What ms={m} />
+
+        <What c="" ms={m} /> {f && <What c={"flip"} ms={m}/> }
         {arr.map(ctn => (
           <Avoid key={ctn} />
         ))}
+        {<h1 id="part1">{wh}</h1>}
+        <div className="hig"></div>
 
     </main>
   );
