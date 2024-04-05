@@ -35,7 +35,7 @@ export default function Home() {
         pin: "#say",
         toggleActions:"restart complete reverse reset",
         scrub: true,
-        onEnter: () => {setM("КТО, ЕСЛИ НЕ ТЫ"),setH("your"), setN("life"), setC("change")},
+        onEnter: () => {setM("КТО, ЕСЛИ НЕ <br /> ТЫ"),setH("your"), setN("life"), setC("change")},
         onEnterBack: () => {setC("change")},
         onLeave: () => {setN(""), setH(""), setC("changing"), setM("")},
         onUpdate: ({progress}) => {
@@ -68,7 +68,7 @@ export default function Home() {
           setW("И ЕСЛИ УЖ МЕНЯТЬ")
         }
       },
-      markers: {startColor: "white", endColor: "white", fontSize: "18px", fontWeight: "bold", indent: 20}
+      // markers: {startColor: "white", endColor: "white", fontSize: "18px", fontWeight: "bold", indent: 20}
 
   },
       opacity: 1});
