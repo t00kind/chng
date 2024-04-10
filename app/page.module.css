@@ -1,12 +1,16 @@
 .main {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
+  text-align: center;
   min-height: 100vh;
+  position: relative;
 }
 
-
+.ctn {
+  text-align: center;
+}
 
 .code {
   font-weight: 700;

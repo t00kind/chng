@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const inter = JetBrains_Mono({ weight: ['400'], subsets: ['cyrillic', 'latin']});
+const inter = JetBrains_Mono({ weight: ['200'], subsets: ['cyrillic', 'latin']});
 
 export const metadata: Metadata = {
   title: "CHNG Rev",
@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>{children}</body>
     </html>
   );
