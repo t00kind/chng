@@ -87,28 +87,9 @@ export default function Home() {
         ))}
         {arr.map(ctn => (
           <Avoid key={ctn} />
-        ))} 
-        <div className="n">
-        <span>ONLY I</span> <br />
-        <span>ONLY HERE</span> <br />
-        <span>ONLY NOW</span> <br />
-        <h1>CAN CHNG OWN REALITY</h1></div>
-      <div className="cresendo">
-      <Image
-      src={hole}
-      alt="Deep Dark"
-      fill
-      priority
-    
-      style={{
-        objectFit: 'cover',
-      }}
-      quality={100}
-    /> 
-    </div>
-        <div className="hig">
-          <h1>NOTHING EVER GOES AS PLANNED IN THIS ACCURSED WRLD</h1>
-          <h2>BUT I DO CHANGES</h2></div>
+        ))}
+        <h1 className="g">WE CAN CHANGE ERRTHING NOW!</h1>
+        <h1>TIME TO DOING FUKKING CHANGING</h1>
 
     </main>
   );

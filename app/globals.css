@@ -16,6 +16,12 @@
   margin-top: 70%;
   
 }
+
+.ans {
+  font-size: 350%;
+  color: red;
+}
+
 .n {
   z-index: 16;
 }
@@ -82,4 +88,8 @@ a {
   html {
     color-scheme: dark;
   }
+}
+.g {
+  font-size: 450%;
+  color: red;
 }
