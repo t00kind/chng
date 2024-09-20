@@ -48,13 +48,7 @@
   opacity: .5;
   font-size: xxx-large;
 }
-.flip {
-  -moz-transform: scale(-1, 1);
--webkit-transform: scale(-1, 1);
--o-transform: scale(-1, 1);
--ms-transform: scale(-1, 1);
-transform: scale(-1, 1);
-}
+
 
 .bruh {
   background-color: rgba(255, 0, 0, 0.507);
@@ -84,11 +78,6 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
 .g {
   font-size: 450%;
   color: red;

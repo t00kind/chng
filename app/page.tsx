@@ -8,26 +8,21 @@ import What from "./ui/What";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import Image from 'next/image'
-import hole from '../public/hole.jpg'
 
 
 export default function Home() {
   gsap.registerPlugin(useGSAP);
   gsap.registerPlugin(ScrollTrigger)
   ScrollTrigger.config({ ignoreMobileResize: true });
-  const arr = [];
-  for (let i =0; i<30; i++) {
-    arr.push(i);
-  }
+
   const [hot, setH] = useState('');
   const [next, setN] = useState('');
   const [chng, setC] = useState('change');
   const [m, setM] = useState('');
   const [f, setF] = useState(false);
-  const [mg, setG] = useState("MUGEN TALES OF CHNG");
+
   useGSAP(() => {
-    let am = ScrollTrigger.maxScroll(window)*1/2
+    let am = ScrollTrigger.maxScroll(window)*(1/2)
     const tl = gsap.timeline();
     tl.to("#logo", {
       scrollTrigger: {
@@ -37,7 +32,7 @@ export default function Home() {
         scrub: 0.3
 
       }, 
-      top: "2%",
+      top: "2.3%",
       fontSize: '0.67em'
     })
     .to("#say", {
@@ -52,9 +47,9 @@ export default function Home() {
         onEnterBack: () => {setC("change")},
         onLeave: () => {setN(""), setH(""), setC("changing"), setF(true)},
         onUpdate: ({progress}) => {
-          if (progress > 0.3 && progress < 0.7) {
+          if (progress > 0.3 && progress < 0.6) {
           setM("ЛОМАЙ РАМКИ"); 
-          setH("your"), setN("view") } else if ((progress > 0.8) && (!f)) {
+          setH("your"), setN("view") } else if ((progress > 0.7) && (!f)) {
             setM("МЕНЯЙ МИР");
             setH("the");
             setN("world")
@@ -78,19 +73,16 @@ export default function Home() {
       opacity: 1});
   });
   return (
-    <main className={styles.main}>
-        <Logo c={chng} h={hot} n={next} />
-        <div className="hig"></div>
-        <What c="" ms={m} />
-        {arr.map(ctn => (
-          <Avoid key={ctn} />
-        ))}
-        {arr.map(ctn => (
-          <Avoid key={ctn} />
-        ))}
-        <h1 className="g">WE CAN CHANGE ERRTHING NOW!</h1>
-        <h1>TIME TO DOING FUKKING CHANGING</h1>
-
-    </main>
+      <main className={styles.main}>
+          <Logo c={chng} h={hot} n={next}/>
+          <What ms={m}/>
+          <div className="hig"></div>
+          <div className="hig"></div>
+          <div className="hig"></div>
+          <h1>ОЧНИСЬ И ВЗГЛЯНИ НА РЕАЛЬНОСТЬ.</h1>
+          <h1>КТО?ТЫ</h1>
+          <h1 className='g' >ПЫЛАЙ ЯРЧЕ ЗВЕЗД!</h1>
+          <h1>СОЗДАВАЙ ПЕРЕМЕНЫ</h1>
+      </main>
   );
 };
