@@ -59,7 +59,9 @@
 .baseline {
   white-space: nowrap;
 }
-
+.awe {
+  font-size: medium;
+}
 
 * {
   box-sizing: border-box;
@@ -82,3 +84,8 @@ a {
   font-size: 450%;
   color: red;
 }
+/*@media screen and (max-width: 600px) {*/
+/*  #mr_penis {*/
+/*    font-size: 2.55em;*/
+/*  }*/
+/*}*/

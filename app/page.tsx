@@ -3,7 +3,7 @@
 import Logo from "./ui/Logo";
 import styles from "./page.module.css";
 import { useState, useEffect } from "react";
-import { Avoid } from "./ui/avoid";
+import {Ag} from "./ui/avoid";
 import What from "./ui/What";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -75,14 +75,21 @@ export default function Home() {
   return (
       <main className={styles.main}>
           <Logo c={chng} h={hot} n={next}/>
+          <div className="hig"></div>
           <What ms={m}/>
           <div className="hig"></div>
+          <Ag/>
+          <Ag/>
+          <Ag/>
           <div className="hig"></div>
-          <div className="hig"></div>
-          <h1>ОЧНИСЬ И ВЗГЛЯНИ НА РЕАЛЬНОСТЬ.</h1>
-          <h1>КТО?ТЫ</h1>
-          <h1 className='g' >ПЫЛАЙ ЯРЧЕ ЗВЕЗД!</h1>
-          <h1>СОЗДАВАЙ ПЕРЕМЕНЫ</h1>
+          <h1>МОЙ МИР. МОЯ РЕАЛЬНОСТЬ.</h1>
+          <h1>КТО?Я</h1>
+          <p>ПРЕДЕЛЬНО УЛЬТИМАТИВНО СФОКУСИРОВАН.</p>
+          <p>БЕСПРЕДЕЛЬНО ОСОЗНАН</p>
+          <p>ХИРУРГИЧЕСКИ ТОЧНО ВИЖУ КАЖДУЮ ДЕТАЛЬ</p>
+          <h1>СВЕРХГИГАНТ.</h1>
+          <h1>САМОЕ ВРЕМЯ МЕНЯТЬ.</h1>
+          <h1>Я СОЗДАЮ ПЕРЕМЕНЫ</h1>
       </main>
   );
 };

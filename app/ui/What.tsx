@@ -1,12 +1,9 @@
 'use client';
 
-const What = ({ms, c}: {ms: any, c: any}) => {
-    let res = "baseline"
-    if (c) {
-    res += ' ' + c}
+const What = ({ms}: {ms: any}) => {
     return (
         <div className="www">
-            <h1 className={res} id="say">{ms}</h1>
+            <h1 className='baseline' id="say">{ms}</h1>
         </div>
     );
 }
