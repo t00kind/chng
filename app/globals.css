@@ -11,6 +11,7 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
 #say {
   font-size: 250%;
   margin-top: 70%;
@@ -43,6 +44,7 @@
 }
 .now {
   font-size: xxx-large;
+  color: red;
 }
 #part1 {
   opacity: .5;

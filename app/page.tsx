@@ -1,10 +1,11 @@
 'use client';
 
 import Logo from "./ui/Logo";
-import styles from "./page.module.css";
-import { useState, useEffect } from "react";
-import {Ag} from "./ui/avoid";
+import Now from './ui/Now'
 import What from "./ui/What";
+import {Ag} from "./ui/avoid";
+import styles from "./page.module.css";
+import {useEffect, useState, useRef} from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -14,6 +15,7 @@ export default function Home() {
   gsap.registerPlugin(useGSAP);
   gsap.registerPlugin(ScrollTrigger)
   ScrollTrigger.config({ ignoreMobileResize: true });
+
 
   const [hot, setH] = useState('');
   const [next, setN] = useState('');
@@ -72,6 +74,7 @@ export default function Home() {
   },
       opacity: 1});
   });
+
   return (
       <main className={styles.main}>
           <Logo c={chng} h={hot} n={next}/>
@@ -90,6 +93,10 @@ export default function Home() {
           <h1>СВЕРХГИГАНТ.</h1>
           <h1>САМОЕ ВРЕМЯ МЕНЯТЬ.</h1>
           <h1>Я СОЗДАЮ ПЕРЕМЕНЫ</h1>
+          <Ag/>
+          <Ag/>
+          <Ag/>
+          <Now />
       </main>
   );
 };
