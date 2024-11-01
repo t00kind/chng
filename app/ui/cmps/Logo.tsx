@@ -1,6 +1,6 @@
 'use client';
 import localFont from 'next/font/local';
-const b = localFont({src: "./trans.woff2"});
+const b = localFont({src: "../fonts/trans.woff2"});
 import { JetBrains_Mono } from "next/font/google";
 const g = JetBrains_Mono({ weight: ['400'], subsets: ['cyrillic', 'latin']});
 

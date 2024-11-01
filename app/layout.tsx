@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import SmoothScrolling from "@/app/ui/Smooth";
+import SmoothScrolling from "@/app/ui/cmps/Smooth";
 
 const inter = JetBrains_Mono({ weight: ['200'], subsets: ['cyrillic', 'latin']});
 
