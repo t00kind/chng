@@ -45,13 +45,13 @@ export default function Akatski() {
           onLeave: () => {setN(""), setH(""), setC("changing"), setF(true)},
           onUpdate: ({progress}) => {
             if (progress > 0.3 && progress < 0.6) {
-            setM("ЛОМАЙ РАМКИ"); 
-            setH("your"), setN("view") } else if ((progress > 0.7) && (!f)) {
+            setM("РАЗРУШЬ РАМКИ"); 
+            setH("your"), setN("mind") } else if ((progress > 0.7) && (!f)) {
               setM("МЕНЯЙ МИР");
               setH("the");
               setN("world")
             } else if (progress < 0.3) {
-              setM("КТО, ЕСЛИ НЕ ТЫ"),setH("your"), setN("life")
+              setM("КТО?ТЫ"),setH("your"), setN("life")
             }
           },
           onLeaveBack: () => {setH(""), setN(""), setM(""), setC("change")},
