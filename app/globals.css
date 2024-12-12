@@ -61,7 +61,7 @@ html.lenis {
   font-size: xxx-large;
   color: red;
 }
-#part1 {
+#part1, #part2 {
   font-size: 300%;
   opacity: 0.5;
 }

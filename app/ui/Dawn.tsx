@@ -40,7 +40,7 @@ export default function Akatski() {
           pin: "#say",
           toggleActions:"restart complete reverse reset",
           scrub: true,
-          onEnter: () => {setM("КТО, ЕСЛИ НЕ ТЫ"),setH("your"), setN("life"), setC("change")},
+          onEnter: () => {setM("КТО?ТЫ"),setH("your"), setN("life"), setC("change")},
           onEnterBack: () => {setC("change")},
           onLeave: () => {setN(""), setH(""), setC("changing"), setF(true)},
           onUpdate: ({progress}) => {
